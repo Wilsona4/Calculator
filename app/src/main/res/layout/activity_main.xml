@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvExpression"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center_vertical|end"
+        android:padding="8dp"
+        android:singleLine="true"
+        android:textColor="@color/ash"
+        android:textSize="36sp"
+        tools:text="3067575275027750275752752072507257025025075205070527075207052072570527072075027075207057207025"
+        android:ellipsize="end"/>
+<!--        android:marqueeRepeatLimit="marquee_forever"-->
+<!--        android:focusable="true"-->
+<!--        android:focusableInTouchMode="true"-->
+<!--        android:scrollHorizontally="true"-->
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:ellipsize="end"
+        android:gravity="end|center_vertical"
+        android:singleLine="true"
+        android:paddingHorizontal="8dp"
+        android:textColor="@color/ash"
+        android:textSize="36sp"
+        tools:text="100" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="2dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvClear"
+                style="@style/action"
+                android:text="C"/>
+            <TextView
+                android:id="@+id/tvOpenBracket"
+                style="@style/action"
+                android:text="("/>
+            <TextView
+                android:id="@+id/tvCloseBracket"
+                style="@style/action"
+                android:text=")"/>
+            <TextView
+                android:id="@+id/tvDivide"
+                style="@style/action"
+                android:text="/"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvSeven"
+                style="@style/numeric"
+                android:text="7"/>
+            <TextView
+                android:id="@+id/tvEight"
+                style="@style/numeric"
+                android:text="8"/>
+            <TextView
+                android:id="@+id/tvNine"
+                style="@style/numeric"
+                android:text="9"/>
+            <TextView
+                android:id="@+id/tvMultiply"
+                style="@style/action"
+                android:text="*"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvFour"
+                style="@style/numeric"
+                android:text="4"/>
+            <TextView
+                android:id="@+id/tvFive"
+                style="@style/numeric"
+                android:text="5"/>
+            <TextView
+                android:id="@+id/tvSix"
+                style="@style/numeric"
+                android:text="6"/>
+            <TextView
+                android:id="@+id/tvSubtract"
+                style="@style/action"
+                android:text="-"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvOne"
+                style="@style/numeric"
+                android:text="1"/>
+            <TextView
+                android:id="@+id/tvTwo"
+                style="@style/numeric"
+                android:text="2"/>
+            <TextView
+                android:id="@+id/tvThree"
+                style="@style/numeric"
+                android:text="3"/>
+            <TextView
+                android:id="@+id/tvAdd"
+                style="@style/action"
+                android:text="+"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvDot"
+                style="@style/numeric"
+                android:text="."
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tvZero"
+                style="@style/numeric"
+                android:text="0"/>
+            <ImageView
+                android:id="@+id/ivBack"
+                android:scaleType="center"
+                android:src="@drawable/baseline_backspace_black_18dp"
+                style="@style/numeric"/>
+            <TextView
+                android:id="@+id/tvEquals"
+                style="@style/action"
+                android:text="="/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
